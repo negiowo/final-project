@@ -1,13 +1,7 @@
 # Final Project!
 
-This is it! The culmination of your procedural graphics experience this semester. For your final project, we'd like to give you the time and space to explore a topic of your choosing. You may choose any topic you please, so long as you vet the topic and scope with an instructor or TA. We've provided some suggestions below. The scope of your project should be roughly 1.5 homework assignments). To help structure your time, we're breaking down the project into 4 milestones:
 
-## Project planning: Design Doc (due 11/5)
-Before submitting your first milestone, _you must get your project idea and scope approved by Rachel, Adam or a TA._
-
-### Design Doc
-Start off by forking this repository. In your README, write a design doc to outline your project goals and implementation plan. It must include the following sections:
-
+## Project planning: Design Doc
 #### Introduction
 What motivates your project?
 - To furthur extend a project that I have worked on, allowing it to have more meaningful levels and be filled with 3D objects.
@@ -79,12 +73,15 @@ Sample Wave Function Collapse algorithm generated maps:
 <img width="700" src="./Image/WFC_map_3.png"> 
 
 ## Final submission (due 12/1)
-Time to polish! Spen this last week of your project using your generator to produce beautiful output. Add textures, tune parameters, play with colors, play with camera animation. Take the feedback from class critques and use it to take your project to the next level.
+Added a feature of relocating actors to more meaningful locations after random map generation. (Successful)
 
-Submission:
-- Push all your code / files to your repository
-- Come to class ready to present your finished project
-- Update your README with two sections 
-  - final results with images and a live demo if possible
-  - post mortem: how did your project go overall? Did you accomplish your goals? Did you have to pivot?
+Attempted to add a feature of resizing the map to have more tiles, but the plug-in does not seem to support tile count changes at runtime. (Code under BP_MapGenerator: functions RandomizedMap and ResizeMap)
+
+Attempted to add a feature of spawn and despawn objects as tile type changes, but debugging takes way longer than expected. The hardest part is to correctly link each object to its corresponding tile and know when to destroy them. (Code under BP_FloorManager)
+
+Sample actors relocated maps:
+
+<img width="700" src="./Image/Actor_Relocated_WFC_map_1.png"> 
+
+<img width="700" src="./Image/Actor_Relocated_WFC_map_2.png"> 
 
