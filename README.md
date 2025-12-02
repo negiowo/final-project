@@ -72,7 +72,7 @@ Sample Wave Function Collapse algorithm generated maps:
 
 <img width="700" src="./Image/WFC_map_3.png"> 
 
-## Final submission (due 12/1)
+## Final submission
 Added a feature of relocating actors to more meaningful locations after random map generation. (Successful)
 
 Attempted to add a feature of resizing the map to have more tiles, but the plug-in does not seem to support tile count changes at runtime. (Code under BP_MapGenerator: functions RandomizedMap and ResizeMap)
